@@ -1,0 +1,41 @@
+/** 一级导航样式 */
+.ui-navigator {
+    width: 100%; height:46px;
+    border-bottom: 1px solid #e0e0e0; background:#fff;
+    display: -webkit-box; -webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select:none;
+}
+.ui-navigator .ui-navigator-wrapper{
+	height:100%;
+    display: -webkit-box; -webkit-box-flex: 1;
+	overflow:hidden;
+}
+.ui-navigator .ui-navigator-list{
+	height:100%;
+    display: -webkit-box; -webkit-box-flex: 0;/*0为不平分，不会压缩折行*/
+}
+.ui-navigator .ui-navigator-list li{
+	display: -webkit-box; -webkit-box-flex: 0;/*0为不平分，不会压缩折行*/
+	cursor:pointer;
+}
+.ui-navigator .ui-navigator-fix,.ui-navigator li{
+    text-decoration: none; outline: none; 
+    font-size: 14px; font-weight: normal; color: #505050; text-align: center;
+	padding:0 6px;-webkit-box-sizing: border-box;
+    display: -webkit-box; -webkit-box-align: center; -webkit-box-pack: center;
+}
+.ui-navigator-fixright{
+	-webkit-box-shadow: -1px 0 4px rgba(0,0,0,0.1);
+}
+.ui-navigator-fixleft{
+	-webkit-box-shadow: 1px 0 4px rgba(0,0,0,0.1);
+}
+/*css for pad*/
+@media all and (min-device-width: 768px) and (max-device-width: 1024px){
+.ui-navigator .ui-navigator-fix,.ui-navigator li{
+	font-size: 18px;
+}
+}
+.ui-navigator li.on{
+    color:#bb434d;
+}

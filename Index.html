@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="Images/favicon.ico" >
+<title>淼洁环保科技有限公司</title>
+<!--核心js和CSS-->
+<script src="Scripts/Core/Jquery.js"></script>
+<script src="Scripts/Core/Touch.js"></script>
+<script src="Scripts/Commen.js"></script>
+<link rel="stylesheet" href="Css/Core/Base.css">
+<link rel="stylesheet" href="Css/Core/Icon.css">
+<link rel="stylesheet" href="Css/Commen.css">
+<!--功能模块js和css-->
+<script src="Scripts/Extend/Extend.js"> </script>
+<link rel="stylesheet" href="Css/Extend/Extend.css">
+<!--第三方模块js和css-->
+<script src="Scripts/Extend/IScroll/IScroll.js"></script>
+<script type="text/javascript" src="Scripts/Extend/IScroll/Slider.js"></script>
+<link rel="stylesheet" href="Css/Extend/IScroll/Slider.css">
+<script src="Scripts/Extend/IScroll/SideNav.js"></script>
+<link rel="stylesheet" href="Css/Extend/IScroll/SideNav.css">
+<script>
+	$(function(){
+		$(".ui-side-wrapper").sidenav({
+			position:"right",
+			events:"click",
+			trigger:".ui-icon-burger"
+		});
+			$(".ui-slider").slider({
+			  indicator:true,		//是否显示圆点指示器
+			  indicatorPos:"center",  //圆点指示器显示位置
+			  autoPlay:true,            //是否自动播放
+			  interval:3000,            //自动播放时间间隔
+		});
+		$(".ui-footer .ui-tiled li").click(function(){
+			$(this).addClass("on").siblings().removeClass("on");
+		});
+	})
+</script>
+<!--本页面css-->
+ <link rel="stylesheet" href="Css/Global.css">   
+</head>
+
+<body>
+<div class="ui-side-wrapper">
+<!--侧面导航开始-->
+	<div class="ui-side-menu " id="ui-side-menu">
+		<div class="ui-side-scroller">
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;">首页</a>
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;">关于淼洁</a>
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;)">产品展示</a>
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;">解决方案</a>
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;)">新闻中心</a>
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;)">加盟淼洁</a>
+			<a href="#" style="display: block;width: 100%;height: 100px;line-height: 100px;">联系我们</a>
+		</div>
+	</div>
+<!--侧面导航结束-->
+	<div class="ui-side-screen">
+<!--头部操作栏开始-->
+		<header class="ui-header">
+			<div class="ui-icon-burger">
+				<div class="x"></div>
+				<div class="y"></div>
+				<div class="z"></div>
+			</div>
+			<h1 class="ui-border-b">淼洁环保科技有限公司</h1>
+			<i class="ui-icon-home ui-btn" data-href="Index.html"></i>
+		</header>
+<!--头部操作栏结束	-->
+<!--内容区域开始-->
+		<section class="ui-container ui-side-main" id="ui-side-main">
+			<div class="ui-side-scroller">
+<!--轮播图开始-->
+				<div class="ui-slider">
+				  <ul class="ui-slider-content">
+					  <li class="current"><span style="background-image:url(Images/banner.jpg)"></span></li>
+					  <li><span style="background-image:url(Images/banner.jpg)"></span></li>
+					  <li><span style="background-image:url(Images/banner.jpg)"></span></li>
+				  </ul>
+				</div>
+	<!--轮播图结束-->
+	<!--one开始-->
+				<div class="OneBox">
+					<div class="TitleBox">
+						<img src="Images/title.jpg">
+					</div>
+					<div class="ContentBox">
+						<img src="Images/part1.jpg" >
+					</div>
+				</div>
+				<div class="TwoBox">
+					<div class="TitleBox">
+						<img src="Images/title01.png">
+					</div>
+					<div class="Content">
+						<img src="Images/title001.png">
+						<div class="container">
+							<div class="item">
+								<a href="#">
+									<img src="Images/item1.jpg" alt="油烟机清洗">
+									<h3>油烟机清洗</h3>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<img src="Images/item2.jpg" alt="油烟机清洗">
+									<h3>空调清洗</h3>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<img src="Images/item3.jpg" alt="油烟机清洗">
+									<h3>冰箱清洗</h3>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<img src="Images/item4.jpg" alt="油烟机清洗">
+									<h3>洗衣机清洗</h3>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<img src="Images/item5.jpg" alt="油烟机清洗">
+									<h3>饮水机机清洗</h3>
+								</a>
+							</div>
+							<div class="item">
+								<a href="#">
+									<img src="Images/item6.jpg" alt="油烟机清洗">
+									<h3>热水器清洗</h3>
+								</a>
+							</div>
+						</div>
+						<div class="container02">
+							<img src="Images/title002.png" alt="服务展示">
+						</div>
+						<div class="container03">
+							<div class="item">
+								<img src="Images/service01.png" alt="微信下单">
+								<h3>微信下单</h3>
+							</div>
+							<div class="item1">
+								<h3>+</h3>
+							</div>
+							<div class="item">
+								<img src="Images/service02.png" alt="微信下单">
+								<h3>预约时间</h3>
+							</div>
+							<div class="item2">
+								<h3>+</h3>
+							</div>
+							<div class="item">
+								<img src="Images/service03.png" alt="微信下单">
+								<h3>预约时间</h3>
+							</div>
+							<div class="item3">
+								<h3>=</h3>
+							</div>
+							<div class="item">
+								<img src="Images/service04.png" alt="微信下单">
+								<h3>一站式盈利</h3>
+							</div>
+						</div>
+						<div class="container04">
+							<ul >
+								<li><i></i><span>足不出户 在线支付</span></li>
+								<li><i></i><span>无需等待 时间自由</span></li>
+								<li><i></i><span>井然有序 安全可靠</span></li>
+								<li><i></i><span>安全可靠 收益保障</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+<!--three开始-->
+				<div class="ThreeBox">
+					<div class="TitleBox">
+						<img src="Images/title02.png">
+					</div>
+					<div class="container">
+						<div class="item bg_color1">
+							<h3><i class="icon1"></i><span>小本创业 万元起步</span></h3>
+							<p>淼洁加盟免收加盟费、权益金、保证金，开店成本低，适合个人投资。</p>
+						</div>
+						<div class="item bg_color2">
+							<h3><i class="icon2"></i><span>快速回本  风险可控</span></h3>
+							<p>淼洁不仅投成本低，而且能够快速实现资金回笼，可大量预收现金回笼资金。</p>
+						</div>
+						<div class="item bg_color3">
+							<h3><i class="icon3"></i><span>试学两天  终身培训</span></h3>
+							<p>投资者可免费试学2天，签约加盟将继续会员制终身培训，学会为止。不收任何费用。</p>
+						</div>
+						<div class="item bg_color4">
+							<h3><i class="icon4"></i><span>多种模式  盈利翻倍</span></h3>
+							<p>淼洁为复合式经营模式，线上+线下经营，扩大了服务范围,增加了客户资源，增加了赢利点。</p>
+						</div>
+						<div class="item bg_color5">
+							<h3><i class="icon5"></i><span>技术支持  无后顾之忧</span></h3>
+							<p>遇到清洗家的出问题时可以随时联系淼洁总部，总部免费为加盟处理问题。</p>
+						</div>
+						<div class="item bg_color6">
+							<h3><i class="icon6"></i><span>机器终身  保修承诺</span></h3>
+							<p>公司总部承为加盟商提供7X24小时报修服务，加盟无需担心设备保修问题。</p>
+						</div>
+					</div>
+				</div>
+<!--three结束-->
+<!--four开始-->
+				<div class="FourBox">
+					<div class="TitleBox">
+						<img src="Images/title03.png">
+					</div>
+					<div class="container">
+						<img src="Images/content.jpg" alt="八大支持">
+					</div>
+				</div>
+<!--four结束-->
+<!--five开始-->
+				<div class="FiveBox">
+					<div class="TitleBox">
+						<img src="Images/title04.png">
+					</div>
+					<div class="container">
+						<div class="item">
+							<a href="#">
+								<div class="bg_color">
+									<img src="Images/Show.jpg" alt="创业门店板块">
+									<div class="star">
+										<img src="Images/two_star.png" alt="创业门店板块">
+									</div>
+								</div>
+								<div class="describe">
+									<h3>淼洁创业A型</h3>
+									<p>1-2万起</p>
+									<p>投资小&nbsp;&nbsp;风险小</p>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="bg_color">
+									<img src="Images/Show.jpg" alt="创业门店板块">
+									<div class="star">
+										<img src="Images/three_star.png" alt="创业门店板块">
+									</div>
+								</div>
+								<div class="describe">
+									<h3>淼洁创业B型</h3>
+									<p>3-4万起</p>
+									<p>投资大&nbsp;&nbsp;回报高</p>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="bg_color">
+									<img src="Images/Show.jpg" alt="创业门店板块">
+									<div class="star">
+										<img src="Images/four_star.png" alt="创业门店板块">
+									</div>
+								</div>
+								<div class="describe">
+									<h3>淼洁创业C型</h3>
+									<p>5-8万起</p>
+									<p>档次高&nbsp;&nbsp;效益好</p>
+								</div>
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<div class="bg_color">
+									<img src="Images/Show.jpg" alt="创业门店板块">
+								<div class="star">
+										<img src="Images/five_star.png" alt="创业门店板块">
+									</div>
+								</div>
+								<div class="describe">
+									<h3>旗舰店方案</h3>
+									<p>15万起</p>
+									<p>业务多&nbsp;&nbsp;品牌强</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="butten">
+						<a href="#">点击查看更多&gt;&gt;</a>
+					</div>
+				</div>
+<!--five结束-->
+<!--留言部分开始-->
+			<div class="Message">
+				<div class="TitleBox">
+					<img src="Images/title05.png" alt="留言">
+				</div>
+				<div class="container">
+					<form action="">
+						<input type="text" placeholder="姓名"/>
+						<input type="text" placeholder="手机"/>
+						<input type="text" placeholder="邮箱"/>
+						<textarea placeholder="留言" name="" id="" ></textarea>
+						<button type="button"> 在线发送</button>
+					</form>
+				</div>
+			</div>
+<!--留言部分结束-->
+			</div>
+		</section>
+<!--内容区域结束-->
+<!--底部导航开始-->
+		 <footer class="ui-footer"> 
+        <ul class="ui-tiled ui-border-t">
+            <li  class="on" data-href="#"><i class="ui-icon-home-h"> </i><p>首页</p></li>
+            <li data-href="#"><i class="ui-icon-home-s"> </i><p>服务</p></li>
+            <li data-href="#"><i class="ui-icon-home-j"> </i><p>加盟</p></li>
+            <li data-href="#"><i class="ui-icon-home-p"> </i><p>方案</p></li>
+            <li data-href="#"><i class="ui-icon-home-c"> </i><p>客服</p></li>
+        </ul>
+		</footer>
+<!--底部导航开始-->
+	</div>
+</div>
+</body>
+</html>

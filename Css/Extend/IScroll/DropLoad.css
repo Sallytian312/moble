@@ -1,0 +1,187 @@
+.ui-dropload{
+	width: 100%;
+	position:absolute; left:0; top:0; bottom:0;z-index: 1; /*top:0; bottom:0;可以将div高度撑高为满屏*/
+	background:#FFFFFF;
+	overflow: hidden;
+}
+.ui-drop-scroller {
+	width: 100%;
+	position: absolute; z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+	-webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none;
+}
+.ui-scroller-pullUp{
+	width:100%; height: 50px;
+	background: #FFFFFF; 
+	position:absolute; left:0px; bottom:-50px;
+	display: -webkit-box; -webkit-box-sizing: border-box; 
+	-webkit-box-pack: center; -webkit-box-align:center;
+}
+.ui-scroller-pullDown{
+	width:100%; height: 50px; background: #FFFFFF; 
+	position:absolute; left:0px; top:-50px;
+	display: -webkit-box; -webkit-box-sizing: border-box; 
+	-webkit-box-pack: center; -webkit-box-align:center;
+}
+/*.ui-circle {
+	width: 20px;height: 20px; margin-right:4px;
+	position:relative;
+	border-radius: 50%; background: #0cc;
+}
+.ui-pie-left,.ui-pie-right {
+	width:20px;  height:20px;
+	position: absolute; top: 0;left: 0;
+}
+.ui-circle-left, .ui-circle-right {
+	width:20px; height:20px;
+	background:#c8c8c8;border-radius: 50%;
+	position: absolute; top: 0; left: 0;
+}
+.ui-pie-left, .ui-circle-left {
+	clip:rect(0,10px,auto,0);
+}
+.ui-pie-right, .ui-circle-right {
+	clip:rect(0,auto,auto,10px);
+}
+.ui-circle-mask {
+	width: 16px; height: 16px;border-radius: 50%;
+	position: absolute; left: 2px; top: 2px;
+	text-align: center; line-height: 16px;
+	font-size: 16px; font-weight: bold; color: #00aacc;background: #FFF;
+}*/
+.ui-circle {
+	width: 20px;height: 20px; margin-right:4px;
+	position:relative;
+	border:2px solid transparent; border-radius: 50%;
+}
+.ui-pie-left,.ui-pie-right {
+	width:10px;  height:20px; position: absolute; top: 0;
+	overflow:hidden;							/*很重要，隐藏掉溢出的蓝色边框*/
+}
+.ui-pie-left{
+	left:0;	
+}
+.ui-pie-right{
+	right:0;	
+}
+.ui-circle-left, .ui-circle-right {
+	width:16px; height:16px;
+	border-radius: 50%; border:2px solid #0cc; /*进度框蓝色*/
+	position: absolute; top: 0;
+	-webkit-transform: rotate(45deg);
+}
+.ui-circle-left {
+	border-bottom:2px solid #c8c8c8;		   /*默认显示的灰色边框，旋转后隐藏，显示溢出的蓝色边框*/
+	border-left:2px solid #c8c8c8;
+	left:0;
+	/*-webkit-animation: circleProgressLoad_left 5s linear infinite;*/
+}
+.ui-circle-right {
+	border-top:2px solid #c8c8c8;			   /*默认显示的灰色边框，旋转后隐藏，显示溢出的蓝色边框*/
+	border-right:2px solid #c8c8c8;
+	right:0;
+	/*-webkit-animation: circleProgressLoad_right 5s linear infinite;*/
+}
+@-webkit-keyframes circleProgressLoad_right{
+  0%{
+    -webkit-transform: rotate(45deg);
+  }
+  50%,100%{
+    -webkit-transform: rotate(225deg);
+  }
+}
+@-webkit-keyframes circleProgressLoad_left{
+  0%,50%{
+    -webkit-transform: rotate(45deg);
+  }
+  100%{
+    -webkit-transform: rotate(225deg);
+  }
+}
+/*loading-more*/
+.ui-scroller-pullUp div.loading-more{
+	height:20px; width:132px; position:relative;
+	display:block;
+}
+.ui-scroller-pullUp .pull-up-msg {
+	display:block; height:20px; line-height:20px;
+	font-weight: bold; font-size: 14px;color: #888;
+	position:absolute; top:0; left:26px;
+}
+.ui-scroller-pullUp .pull-up-icon{
+	display:block; width:20px; height:20px; 
+	margin:0; border:none;
+	position:absolute; top:0; left:0;
+	-webkit-transform:rotate(0deg); -webkit-transition-property: -webkit-transform; -webkit-transition-duration: 500ms;
+}
+.ui-scroller-pullUp .pull-up-icon i{
+	font-size:20px;line-height:20px;
+	position:relative; top:0; left:0;
+}	
+.ui-scroller-pullUp .pull-up-icon.reverse_icon{
+	-webkit-transform: rotate(-180deg);
+	-webkit-transform-origin: center center;
+}
+/*loading*/
+.ui-scroller-pullUp div.loading{
+	height: 20px; width:122px; position:relative;
+}
+.ui-scroller-pullUp div.loading i{
+	display: block; width: 20px; height: 20px;
+	background: url(../../../Images/loading_sprite.png); -webkit-background-size: auto 20px;
+	position:absolute; top:0; left:0;
+	-webkit-animation: am-rotate 1s steps(12) infinite; 
+}
+.ui-scroller-pullUp div.loading p{
+	font-size:14px; font-weight:bold; color: #888;	
+	position:absolute; top:0; left:26px;
+}
+@-webkit-keyframes am-rotate {
+	from {
+		background-position: 0 0; }
+	to {
+		background-position: -240px 0; } 
+}
+/*loading-error*/
+.ui-scroller-pullUp div.loading-error{
+	height: 20px; width:128px; position:relative;
+	position:relative;
+}
+.ui-scroller-pullUp div.loading-error i{
+	font-size:20px; color: #888; line-height:20px;	
+	position:absolute; top:0; left:0;
+}
+.ui-scroller-pullUp div.loading-error p{
+	font-size:14px; font-weight:bold; color: #888;	
+	position:absolute; top:0; left:26px;
+}
+/*loading-none*/
+.ui-scroller-pullUp div.loading-none{
+	height:20px; width:98px;
+	position:relative;
+}
+.ui-scroller-pullUp div.loading-none i{
+	font-size:20px; color: #888; line-height:20px;	
+	position:absolute; top:0; left:0;
+}
+.ui-scroller-pullUp div.loading-none p{
+	font-size:14px; font-weight:bold; color: #888;	
+	position:absolute; top:0; left:26px;
+}
+/*loading-complete*/
+.ui-scroller-pullUp div.loading-complete{
+	height: 20px; width:128px; position:relative;
+	position:relative;
+}
+.ui-scroller-pullUp div.loading-complete i{
+	font-size:20px; color: #888; line-height:20px;	
+	position:absolute; top:0; left:0;
+}
+.ui-scroller-pullUp div.loading-complete p{
+	font-size:14px; font-weight:bold; color: #888;	
+	position:absolute; top:0; left:26px;
+}
+

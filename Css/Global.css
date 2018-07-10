@@ -1,0 +1,364 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*标题公用开始*/
+.TitleBox{
+	width: 100%;
+	padding: 30px 0 10px 0;
+	
+}
+.TitleBox img{
+	width: 100%;
+	display: block;
+}
+/*标题公用结束*/
+/*one开始*/
+.OneBox .ContentBox{
+	width: 100%;
+}
+.OneBox .ContentBox img{
+	width: 100%;
+	display: block;
+}
+/*one结束*/
+/*two开始*/
+.TwoBox{
+	background: url(../Images/background.png) no-repeat center;
+	padding-bottom: 20px;
+}
+.TwoBox .Content img {
+	width: 100%;
+	display: block;
+}
+.TwoBox .Content .container{
+	overflow: hidden;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	padding-bottom: 20px;
+}
+.TwoBox .Content .container .item{
+	width: 30%;
+	margin-top: 10px;
+	position: relative;
+}
+.TwoBox .Content .container .item img{
+	width: 100%;
+}
+.TwoBox .Content .container .item h3{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #0261ff;
+	opacity:0.9;
+}
+.TwoBox .Content .container01{
+	margin-top: 20px;
+	border: 1px solid red;
+}
+.TwoBox .Content .container02 img{
+	width: 100%;
+	display: block;
+}
+.TwoBox .Content .container03{
+	overflow: hidden;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	
+}
+.TwoBox .Content .container03 .item{
+	width: 20%;
+	margin-top: 10px;
+	position: relative;
+	
+}
+.TwoBox .Content .container03 .item img{
+	width: 100%;
+	display: block;
+}
+.TwoBox .Content .container03 .item h3{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: 800;
+	color: #e96e21;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	height: 30px;
+}
+.TwoBox .Content .container03 .item1,.TwoBox .Content .container03 .item2,.TwoBox .Content .container03 .item3{
+	width: 4%;
+}
+.TwoBox .Content .container03 .item1 h3,.TwoBox .Content .container03 .item2 h3,.TwoBox .Content .container03 .item3 h3{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	font-weight: 800;
+	color: #e96e21;
+	line-height: 150px;
+	height: 150px;
+	text-align: center;
+	width: 100%;
+}
+.TwoBox .Content .container04 ul{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.TwoBox .Content .container04 ul li{
+	width: 47%;
+	text-align: center;
+}
+.TwoBox .Content .container04 ul li i{
+	display:inline-block;
+	background: url(../Images/check.png) no-repeat center;
+	width: 18px;
+	height: 18px;
+	position: relative;
+	top:2px;
+	margin-right: 5px;
+}
+.TwoBox .Content .container04 ul li span{
+	font-family: "微软雅黑";
+	font-family: 16px;
+	color: #444;
+	height: 30px;
+	line-height: 30px;
+}
+/*two结束*/
+/*three开始*/
+.ThreeBox .container{
+	display: flex;
+	flex-direction:column; 
+	align-items: center;
+}
+.ThreeBox .container .bg_color1{
+	background-color: #dff7f9;
+}
+.ThreeBox .container .bg_color2{
+	background-color: #fbe9cc;
+}
+.ThreeBox .container .bg_color3{
+	background-color: #fbe2d3;
+}
+.ThreeBox .container .bg_color4{
+	background-color: #cde4fd;
+}
+.ThreeBox .container .bg_color5{
+	background-color: #d4fde6;
+}
+.ThreeBox .container .bg_color6{
+	background-color: #ffe2da;
+}
+.ThreeBox .container .item{
+	width: 96%;
+	margin-bottom: 20px;
+}
+.ThreeBox .container .bg_color1 h3{
+	background-color: #0190cc;
+	text-align: center;
+}
+.ThreeBox .container .item h3 span{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+.ThreeBox .container .bg_color2 h3{
+	background-color: #f8a21b;
+	text-align: center;
+}
+.ThreeBox .container .bg_color3 h3{
+	background-color: #e96e21;
+	text-align: center;
+}
+.ThreeBox .container .bg_color4 h3{
+	background-color: #2177da;
+	text-align: center;
+}
+.ThreeBox .container .bg_color5 h3{
+	background-color: #079b47;
+	text-align: center;
+}
+.ThreeBox .container .bg_color6 h3{
+	background-color: #da522c;
+	text-align: center;
+}
+.ThreeBox .container .item p{
+	font-family: "微软雅黑";
+	font-size: 28px;
+	line-height: 36px;
+	padding: 10px ;
+}
+.ThreeBox .container .item h3 .icon1{
+	background: url(../Images/icon1.png) no-repeat center;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.ThreeBox .container .item h3 .icon2{
+	background: url(../Images/icon2.png) no-repeat center;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.ThreeBox .container .item h3 .icon3{
+	background: url(../Images/icon3.png) no-repeat center;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.ThreeBox .container .item h3 .icon4{
+	background: url(../Images/icon4.png) no-repeat center;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.ThreeBox .container .item h3 .icon5{
+	background: url(../Images/icon5.png) no-repeat center;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+.ThreeBox .container .item h3 .icon6{
+	background: url(../Images/icon6.png) no-repeat center;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+/*three结束*/
+/*four开始*/
+.FourBox .container img{
+	display: block;
+	width: 100%;
+}
+/*four结束*/
+/*five开始*/
+.FiveBox .container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+.FiveBox .container .item{
+	width: 45%;
+	margin-bottom: 15px;
+}
+.FiveBox .container .item .bg_color{
+	background-color: #f4f4f4;
+	width: 100%;
+	padding-top: 10px;
+}
+.FiveBox .container .item .bg_color img{
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+}
+.FiveBox .container .item .bg_color .star{
+	width: 95%;
+}
+.FiveBox .container .item .bg_color .star img {
+	display: block;
+	width: 100%;
+}
+.FiveBox .container .item .describe{
+	width: 100%;
+	margin: 10px 0;
+}
+.FiveBox .container .item .describe h3{
+	font-family: "微软雅黑";
+	font-size: 30px;
+	font-weight: 800;
+	color: #000;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+.FiveBox .container .item .describe p{
+	font-family: "微软雅黑";
+	font-size: 22px;
+	color: #444;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.FiveBox .butten a{
+	display: block;
+	width: 40%;
+	height: 50px;
+	background-color: #eb3900;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+}
+/*five结束*/
+/*留言部分开始*/
+.Message{
+	background: url(../Images/bg.jpg) no-repeat center;
+	width: 100%;
+	padding-bottom: 30px;
+}
+.Message .container form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.Message .container form input{
+	width: 90%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #000;
+	padding-left: 10px;
+}
+.Message .container form textarea{
+	width: 90%;
+	height: 100px;
+	padding-left: 10px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+.Message .container form button{
+	width: 30%;
+	height: 40px;
+	font-family: "微软雅黑";
+	font-size: 24px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	background-color: #eb3900;
+	align-self:flex-start;
+	margin-left:5%;
+}
+
+/*留言部分结束*/
+

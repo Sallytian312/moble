@@ -1,0 +1,248 @@
+/*****************************************************************
+ **************************dialog弹窗插件*******************************
+ *****************************************************************/
+.ui-dialog {
+	width: 100%; height: 100%;
+    position: fixed; top: 0px; left: 0px; z-index: 9999;
+    display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.4); display: none; 
+}
+.ui-dialog.show {
+    display: -webkit-box; display: box; 
+}
+.ui-dialog-cnt {
+	width: 270px; font-size: 16px; 
+    -webkit-background-clip: padding-box; background-clip: padding-box;
+    background-color: rgba(253, 253, 253, 0.95);
+	border-radius: 6px; pointer-events: auto;
+    position: relative;
+}
+.ui-dialog-hd {
+    height: 48px; line-height: 48px;
+    text-align: center; position: relative; 
+}
+.ui-dialog-hd h3{
+	font-size:18px;	
+}
+.ui-dialog-close:before {
+	display: block; line-height: 26px;
+	font-family: "iconfont" !important; font-size: 26px; font-style: normal;
+	-webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px;
+	color: #828282; content: "\f60c";
+	position: absolute; top: 10px; right: 4px; 
+}
+.ui-dialog-close:active {
+    opacity: 0.5; 
+}
+.ui-dialog-bd {
+    min-height: 71px; padding: 18px;
+    border-top-left-radius: 6px; border-top-right-radius: 6px;
+    display: -webkit-box; display: box; -webkit-box-pack: center; -webkit-box-align: center; -webkit-box-orient: vertical; 
+}
+.ui-dialog-bd > h4 {
+	width: 100%;text-align: center; 
+	margin-bottom: 4px;
+}
+.ui-dialog-bd > div, .ui-dialog-bd > ul {
+    width: 100%; 
+}
+.ui-dialog-ft {
+	width: 100%; height: 42px; line-height: 42px;
+    border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; border-top: 1px solid #e0e0e0;
+    display: -webkit-box; -webkit-box-align: center;
+    box-sizing: border-box; 
+}
+.ui-dialog-ft button {
+	display: block; width: 100%; line-height: 42px; text-align: center;
+    color: #00a5e0; background: transparent; 
+    border-right: 1px #e0e0e0 solid;
+    margin: 0 !important;
+    -webkit-box-flex: 1; 
+}
+.ui-dialog-ft button:active {
+    background-color: rgba(0, 0, 0, 0.1) !important; 
+}
+.ui-dialog-ft button:first-child {
+    border-bottom-left-radius: 6px; 
+}
+.ui-dialog-ft button:last-child {
+    border-right: 0;
+    border-bottom-right-radius: 6px; 
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-dialog-ft {
+		position: relative;
+		border: 0;
+		background-position: left top;
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+		background-repeat: repeat-x;
+		-webkit-background-size: 100% 1px; 
+	}
+	.ui-dialog-ft button {
+		border-right: 0;
+		background-position: right top;
+		background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+		background-repeat: repeat-y;
+		-webkit-background-size: 1px 100%; 
+	}
+	.ui-dialog-ft button:last-child {
+		  background: none; 
+	} 
+}
+/*****************************************************************
+ **************************tips消息提示插件***********************
+ *****************************************************************/
+.ui-poptips {
+  width: 100%; padding: 0px 10px; box-sizing: border-box; 
+  position: fixed; top: 0px; left: 0px; z-index: 999;
+}
+.ui-poptips-cnt {
+  max-width: 100%; height: 40px; line-height: 40px;
+  font-size: 16px; color: #fff; text-align: center;
+  white-space: nowrap; text-overflow: ellipsis; 
+  border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+.ui-poptips-cnt i {
+  display: inline-block; margin:9px 4px 0 0;
+  vertical-align: top;
+}
+.ui-poptips-cnt i:before {
+  display: block; width:22px;  height:22px; line-height:22px;
+  font-family: "iconfont-tips" !important; font-style: normal; font-size: 22px; color: rgba(255, 255, 255, 1);
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+}
+.ui-poptips-success i:before {
+  content: "\a600"; 
+}
+.ui-poptips-warn i:before {
+  content: "\a601"; 
+}
+.ui-poptips-info i:before {
+  content: "\a602"; 
+}
+/*****************************************************************
+ **************************loading加载中插件**********************
+ *****************************************************************/
+.ui-loading-wrap {
+	height: 40px; 
+	display: -webkit-box; -webkit-box-pack: center; -webkit-box-align: center; 
+	text-align: center;
+}
+.ui-loading {
+    display: block; width: 20px; height: 20px; 
+    background: url(../../Images/loading_sprite.png); -webkit-background-size: auto 20px;
+    -webkit-animation: am-rotate 1s steps(12) infinite; 
+}
+.ui-loading-bright {
+    display: block; width: 37px; height: 37px;
+	background-image: url(../../Images/loading_sprite_white.png); -webkit-background-size: auto 37px;
+	-webkit-animation: am-rotate2 1s steps(12) infinite; 
+}
+.ui-loading-wrap .ui-loading {
+    margin: 10px; 
+}
+.ui-loading-block {
+	width: 100%; height: 100%;
+    position: fixed; top: 0px; left: 0px; z-index: 9999;
+    display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.ui-loading-block .ui-loading-cnt {
+    width: 130px; height: 110px;
+	font-size: 16px; color: #fff; text-align: center;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-align: center; -webkit-box-pack: center;
+    background: rgba(0, 0, 0, 0.65); border-radius: 6px; 
+}
+.ui-loading-block .ui-loading-bright {
+    margin: 0 0 8px; 
+}
+.ui-loading-block.show {
+    display: -webkit-box; display: box; 
+}
+@-webkit-keyframes am-rotate {
+    from{
+        background-position: 0 0; 
+	}
+    to{
+    	background-position: -240px 0; 
+    } 
+}
+@-webkit-keyframes am-rotate2 {
+    from{
+    	background-position: 0 0;
+	}
+    to{
+    	background-position: -444px 0; 
+	}
+}
+/*****************************************************************
+ **************************menu上滑面板***********************
+ *****************************************************************/
+.ui-actionsheet {
+	width: 100%; height: 100%;
+    position: fixed; top: 0px; left: 0px; z-index: 9999;
+	display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-pack: center; -webkit-box-align: end;
+	background: rgba(0, 0, 0, 0.4); opacity: 0;
+	-webkit-transition-duration: 0.3s; pointer-events: none;
+}
+.ui-actionsheet.show {
+	pointer-events: inherit;
+	opacity: 1; 
+}
+.ui-actionsheet.show .ui-actionsheet-cnt {
+	-webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition-delay: 0; 
+}
+.ui-actionsheet-cnt {
+	width: 100%; padding: 0 8px; box-sizing: border-box;
+    font-size: 21px; text-align: center;
+	-webkit-transform: translate3d(0, 100%, 0);
+	-webkit-transition-property: -webkit-transform; -webkit-transition-timing-function: ease-out; -webkit-transition-duration: 0.3s; 
+    position: fixed; bottom: 0;
+}
+.ui-actionsheet button, 
+.ui-actionsheet h4 {
+	display: block; width: 100%;
+    background: rgba(255, 255, 255, 0.84); color: #0079ff;
+    box-sizing: border-box; 
+}
+.ui-actionsheet button {
+	height: 44px; line-height: 44px;
+}
+.ui-actionsheet h4 {
+	font-size: 13px; color: #8a8a8a; 
+	line-height: 24px;
+	padding-top:10px 20px;
+	border-top-left-radius: 3px; border-top-right-radius: 3px; 
+}
+.ui-actionsheet button:not(:last-child) {
+    border-top: 1px #e0e0e0 solid; 
+}
+.ui-actionsheet button:last-child {
+	margin: 8px 0;
+	border-radius: 3px; 
+}
+.ui-actionsheet button:nth-last-child(2){
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px; 
+}
+.ui-actionsheet button:active {
+    opacity: 0.84; 
+}
+.ui-actionsheet .ui-actionsheet-del {
+	color: #fd472b; 
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .ui-actionsheet button:not(:last-child) {
+		border: 0;
+		background-position: left top;
+		background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.5, #e0e0e0), to(#e0e0e0));
+		background-repeat: repeat-x;
+		-webkit-background-size: 100% 1px; 
+	}
+}

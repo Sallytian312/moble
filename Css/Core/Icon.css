@@ -1,0 +1,68 @@
+@font-face{ 
+	font-family: "iconfont"; src:url(../../Font/iconfont-full.ttf) format("truetype"); 
+}
+.ui-icon,[class^="ui-icon-"]{
+  font-family: "iconfont" !important;
+  font-size: 32px;
+  line-height: 44px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;/*解决在chrome浏览器下被加粗*/
+  -webkit-text-stroke-width: 0.2px; /*解决chrome浏览器下放大出现锯齿*/
+  display:block;
+  color: rgba(0, 0, 0, 0.5); }
+.ui-icon-pen-s:before{  content: "\f601"; }
+.ui-icon-list:before{  content: "\f602"; }
+.ui-icon-need:before{  content: "\f603"; }
+.ui-icon-more:before{  content: "\f604"; }
+.ui-icon-set:before{  content: "\f605"; }
+.ui-icon-arrow-right:before{  content: "\f606"; }
+.ui-icon-arrow-left:before{  content: "\f607"; }
+.ui-icon-return:before{  content: "\f607"; }
+.ui-icon-arrow-down:before{  content: "\f608"; }
+.ui-icon-delete:before{  content: "\f609"; }
+.ui-icon-add:before{  content: "\f60a"; }
+.ui-icon-summary:before{  content: "\f60b"; }
+.ui-icon-close:before{  content: "\f60c"; }
+.ui-icon-home:before{  content: "\f60d"; }
+.ui-icon-demo:before{  content: "\f60e"; }
+.ui-icon-home-h:before{  content: "\f004"; }
+.ui-icon-home-s:before{  content: "\f007"; }
+.ui-icon-home-j:before{  content: "\f006"; }
+.ui-icon-home-p:before{  content: "\f005"; }
+.ui-icon-home-c:before{  content: "\f003"; }
+/*
+ *tips提示条常用图标
+ */
+@font-face{ 
+	font-family: "iconfont-tips"; src:url(../../Font/iconfont-tips.ttf) format("truetype"); 
+}
+.ui-icon-success,.ui-icon-info,.ui-icon-warn{
+	font-family: "iconfont-tips" !important;
+}
+.ui-icon-success:before{  content: "\a600"; }
+.ui-icon-warn:before{  content: "\a601"; }
+.ui-icon-info:before{  content: "\a602"; }
+/*
+ *dropload下拉刷新常用图标
+ */
+@font-face{ 
+	font-family: "iconfont-drop"; src:url(../../Font/iconfont-drop.ttf) format("truetype"); 
+}
+.ui-icon-error,.ui-icon-nothing,.ui-icon-complete,.ui-icon-arrow-pull{
+	font-family: "iconfont-drop" !important;
+}
+.ui-icon-error:before{  content: "\b600"; }
+.ui-icon-nothing:before{  content: "\b601"; }
+.ui-icon-complete:before{  content: "\b602"; }
+.ui-icon-arrow-pull:before{  content: "\b603"; }
+/*
+ *Ratyli星级评分常用图标
+ */
+@font-face{ 
+	font-family: "iconfont-rate"; src:url(../../Font/iconfont-rate.ttf) format("truetype"); 
+}
+.ui-icon-star-border,.ui-icon-star-solid{
+	font-family: "iconfont-rate" !important;
+}
+.ui-icon-star-border:before{  content: "\c601"; }
+.ui-icon-star-solid:before{  content: "\c602"; }

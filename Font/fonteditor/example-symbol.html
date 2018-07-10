@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>symbol example</title>
+    <link rel="stylesheet" href="./page.css">
+    <style>
+        .iconfont-list .icon {
+            width: 42px;
+            height: 42px;
+            transform: scale(1);
+            -webkit-transition: transform .25s ease-out 0s;
+            transition: transform .25s ease-out 0s;
+        }
+        .iconfont-list .icon:hover {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+<svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="one" viewBox="0 -212 1024 1024"><path d="M702 504 l-187 0 l0 299 q-9 1 -15 1 l-266 0 q-24 0 -37 -15 q-13 -13 -13 -37 q-2 -184 0 -369 q0 -11 9 -20 q120 -106 241 -210 l162 -140 q6 -6 13 -12 l96 83 l313 275 q17 13 17 36 q-2 175 0 349 q1 32 -23 51 q-10 8 -22 8 q-140 1 -281 0 l-7 0 l0 -299 ZM841 -165 q-2 -21 5.5 -28.5 q7.5 -7.5 26.5 -7.5 l129 0 q31 -2 28 33 q2 146 0 293 q0 20 15 32 q70 60 138 121 q18 15 18 26 q1 10 -14 28 q-16 21 -34 43 q-20 26 -44 3 q-243 -216 -486 -431 q-8 -8 -18 -17 q-56 50 -109 97 q-197 175 -396 351 q-24 24 -43 -4 q-20 -22 -38 -46 q-22 -26 3 -45 l221 -197 l296 -260 q66 -60 131 0 l159 140 q4 5 12 9 l0 -140 Z"></path></symbol></defs></svg>
+    <div class="main">
+        <h1>fonteditor symbol example</h1>
+        <ul class="iconfont-list">
+            
+            <li>
+                <svg class="icon"><use xlink:href="#one"/></svg>
+                <div class="code">symbol</div>
+                <div class="name">one</div>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>
